@@ -1,0 +1,20 @@
+<div class="row">
+<div class="col-xxxl col-xxl col-md">
+    <ngx-traffic></ngx-traffic>
+</div>
+</div>
+<div class="row">
+	<div class="col-md-6 col-sm-12">
+		<div class="row" *ngFor="let statusCard of statusCards">
+  			<div class="col">
+    			<ngx-status-card [title]="statusCard.title"
+                	[type]="statusCard.type">
+      				<i [ngClass]="statusCard.iconClass"></i>
+    			</ngx-status-card>
+  			</div>
+  		</div>
+	</div>
+	<div class="col-md-6 col-sm-12">
+		<ngx-temperature></ngx-temperature>
+	</div>
+</div>

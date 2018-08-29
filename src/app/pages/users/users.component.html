@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-md-6">
+		<nb-card>
+  			<nb-card-header>
+    			Usuarios
+  			</nb-card-header>
+  			<nb-card-body>
+    			<ng2-smart-table [settings]="settingsUsers" [source]="dataUsers" (deleteConfirm)="onDeleteConfirm($event)">
+    			</ng2-smart-table>
+  			</nb-card-body>
+		</nb-card>
+	</div>
+	<div class="col-md-6">
+		<nb-card>
+  			<nb-card-header>
+    			Posts
+  			</nb-card-header>
+  			<nb-card-body>
+    			<ng2-smart-table [settings]="settingsPosts" [source]="dataPosts" (deleteConfirm)="onDeleteConfirm($event)">
+    			</ng2-smart-table>
+  			</nb-card-body>
+		</nb-card>
+	</div>
+</div>
