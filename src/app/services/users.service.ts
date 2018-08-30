@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UsersService {
 
-apiUrl = 'http://jsonplaceholder.typicode.com';
+apiUrl = 'https://jsonplaceholder.typicode.com';
 
   constructor(private http: HttpClient) { }
 
