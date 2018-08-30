@@ -115,4 +115,12 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
   }
 
+  onDeleteConfirm(event): void {
+    if (window.confirm('Are you sure you want to delete?')) {
+      event.confirm.resolve();
+    } else {
+      event.confirm.reject();
+    }
+  }
+
 }
